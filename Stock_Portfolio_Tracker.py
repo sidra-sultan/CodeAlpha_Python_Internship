@@ -45,24 +45,21 @@ while True:
 
     else:
         print(" Invalid stock name. Please try again.\n")
-
 print("\n========== PORTFOLIO SUMMARY ==========")
-print(f"Total Investment = ${total_cost}")
-# Read previous total
+print(f"Current Investment = ${total_cost}")
+
 try:
     with open("portfolio.txt", "r") as file:
         previous_total = int(file.read())
-except:
+except (FileNotFoundError, ValueError):
     previous_total = 0
 
-# Calculate new grand total
 grand_total = previous_total + total_cost
 
-# Save updated grand total
 with open("portfolio.txt", "w") as file:
     file.write(str(grand_total))
 
-print("\n========== Previous Portfolio ==========")
-print(f"Previous Investment = ${previous_total}")
-print(f"Current Investment  = ${total_cost}")
-print(f"Grand Total         = ${grand_total}")
+print("\n========== INVESTMENT SUMMARY ==========")
+print(f"Previous Investment : ${previous_total}")
+print(f"Current Investment  : ${total_cost}")
+print(f"Grand Total         : ${grand_total}")
