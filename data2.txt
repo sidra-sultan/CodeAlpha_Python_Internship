@@ -1,0 +1,23 @@
+Welcome to our company.
+
+If you have any questions, contact us at:
+support@gmail.com
+
+For sales inquiries:
+sales@company.com
+
+Technical issues:
+tech.help123@yahoo.com
+
+Our HR department:
+hr_department@outlook.com
+
+You can also reach the manager:
+manager.office@mycompany.org
+
+These are not valid emails:
+abc@
+hello.com
+user@com
+test@.com
+example@domain
